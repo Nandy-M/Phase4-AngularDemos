@@ -1,1 +1,114 @@
 <h1>{{ title }}</h1>
+
+<!-- <h1>Learning ngIf</h1>
+<div class="bg-success" *ngIf="success_msg; then updated_msg; else error_msg">
+  user added successfully
+</div>
+<ng-template #updated_msg>user was updated</ng-template>
+<ng-template #error_msg> user was not added</ng-template>
+
+<h2>Learning ngFor</h2>
+<ul>
+  <li *ngFor="let contact of contacts; index as i; first as f; last as l">
+    <div *ngIf="f" class="bg-success">This is first record</div>
+    <div *ngIf="l" class="bg-primary">This is last record</div>
+    <div>{{ i }} {{ contact.firstName }} {{ contact.lastName }}</div>
+  </li>
+</ul>
+
+<p>New For learn odd and even</p>
+<ul>
+  <li *ngFor="let contact of contacts; index as i; even as e; odd as o">
+    <div *ngIf="e" class="bg-success">
+      {{ i }} {{ contact.firstName }} {{ contact.lastName }}
+    </div>
+    <div *ngIf="o" class="bg-primary">
+      {{ i }} {{ contact.firstName }} {{ contact.lastName }}
+    </div>
+  </li>
+</ul>
+
+<h3>Learning ngSwitch</h3>
+<div [ngSwitch]="SuperPower">
+  <div *ngSwitchCase="'wonderwomen'">Display super power of wonder women</div>
+  <div *ngSwitchCase="'He-man'">Display super power of heman</div>
+  <div *ngSwitchCase="'Batman'">Display super power of Batman</div>
+  <div *ngSwitchCase="'spiderman'">Display super power of spiderman</div>
+  <div *ngSwitchDefault>Display default one</div>
+</div>
+
+<h3>Learning ngStyle</h3>
+<div [ngStyle]="{ 'background-color': 'green', color: '#fff' }">
+  This is green div
+</div>
+<div [ngStyle]="{ 'background-color': styleprop, color: '#fff' }">
+  This is dynamic color div from component
+</div>
+<div [ngStyle]="{ color: txtcolor === 'blue' ? 'blue' : 'green' }">
+  This is conditional div
+</div> -->
+
+<!--is the technique used to bind the data from component to view-->
+<!-- <h2>Learning Interpolation</h2>
+<table>
+  <tr>
+    <th>firstname</th>
+    <th>lasttname</th>
+    <th>contact</th>
+  </tr>
+  <tr *ngFor="let contact of contacts">
+    <td>{{ contact.firstName }}</td>
+    <td>{{ contact.lastName }}</td>
+    <td>{{ contact.contactId }}</td>
+  </tr>
+</table>
+
+<h2>Learning Property Binding</h2>
+<div *ngIf="isUserLogedIn">
+  <div [innerHTML]="userObject.firstname"></div>
+</div>
+<table>
+  <tr>
+    <th>firstname</th>
+    <th>lasttname</th>
+    <th>contact</th>
+  </tr>
+  <tr *ngFor="let contact of contacts">
+    <td [title]="contact.firstName">{{ contact.firstName }}</td>
+    <td [title]="contact.lastName">{{ contact.lastName }}</td>
+    <td [title]="contact.contactId">{{ contact.contactId }}</td>
+  </tr>
+</table>
+
+<img [src]="imgurl" [alt]="altimg" />
+
+<p [style.color]="txtcolor">{{ message }}</p>
+
+<h2>Learning Attribute binding</h2>
+<table class="bg-primary">
+  <tr>
+    <th>ContactId</th>
+    <th>firstname</th>
+    <th>lastname</th>
+  </tr>
+  <tr>
+    <td [attr.colspan]="colval">contactId</td> -->
+<!--In html,Dom doesnt know colspan is an element so we have to mention attr.colspan-->
+<!-- <td>lastName</td>
+  </tr>
+</table> -->
+
+<h2>Learaning Event Binding</h2>
+<!-- is the technique used to bind the event of element from view to component-->
+<button (click)="sayHello()">Click to say Hello</button>
+<h2>___</h2>
+<div (mouseover)="highlightBGcolor()">Highlight me</div>
+<input type="text" (focus)="inputBox()" />
+
+<!--Combining both propert and event-->
+<h2>Learning Two way Binding</h2>
+<input [(ngModel)]="userName" />
+<div>{{ userName }}</div>
+
+<input [(ngModel)]="dataValue" type="number" />
+<div *ngIf="dataValue > 10">{{ dataValue }}</div>

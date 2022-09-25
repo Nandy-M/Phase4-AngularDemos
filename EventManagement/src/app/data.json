@@ -1,0 +1,28 @@
+{
+  "employees": [
+    {
+      "firstName": "Nandhini",
+      "lastName": "M",
+      "emailId": "nandhinimurugesan@gmail.com",
+      "id": 1
+    },
+    {
+      "firstName": "vimala",
+      "lastName": "Murugesan",
+      "emailId": "vimalaMurugesan@gmail.com",
+      "id": 2
+    },
+    {
+      "firstName": "Bala",
+      "lastName": "Bharathi",
+      "emailId": "bala@gmail.com",
+      "id": 4
+    },
+    {
+      "firstName": "Siva",
+      "lastName": "Dharaneesh",
+      "emailId": "siva@gmail.com",
+      "id": 5
+    }
+  ]
+}

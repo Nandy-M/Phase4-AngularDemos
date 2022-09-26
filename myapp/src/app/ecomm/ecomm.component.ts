@@ -7,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EcommComponent implements OnInit {
   products = [];
+
   constructor() {}
 
   ngOnInit(): void {}
+
   onProductAdded(data) {
     this.products.push({
       name: data.name,

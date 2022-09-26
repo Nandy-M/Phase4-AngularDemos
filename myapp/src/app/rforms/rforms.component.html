@@ -9,6 +9,14 @@
           class="form-control"
           formControlName="username"
         />
+        <span
+          class="small"
+          *ngIf="
+            !signupForm.get('username').valid &&
+            signupForm.get('username').touched
+          "
+          >Please enter a valid username</span
+        >
       </div>
     </div>
     <div class="row">
